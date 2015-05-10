@@ -12,7 +12,7 @@ with(dataset, plot(DateTime, Voltage, type="l", xlab="datetime", ylab="Voltage")
 with(dataset, plot(DateTime, Sub_metering_1, type="l", xlab="", ylab="Energy submetering"))
 with(dataset, lines(DateTime, Sub_metering_2, col="red"))
 with(dataset, lines(DateTime, Sub_metering_3, col="blue"))
-legend("topright", lty=1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", lty=1, bty="n", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 with(dataset, plot(DateTime, Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power"))
 
